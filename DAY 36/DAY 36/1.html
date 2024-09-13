@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA</title>
+</head>
+<body>
+
+    <h2>Form Validate , Regular Expression , reg ex </h2>
+
+        <input type="text" id="user" name="user" placeholder="username">
+
+        <br><span id="er1"></span>
+
+    <script>
+        
+        function validateForm () {
+
+            var user = document.getElementById('user').value;
+            var er1 = document.getElementById('er1');
+            var ptrn = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            
+            if( ptrn.test(user) ) {
+                er1.innerHTML = 'valid user'
+                er1.style.color = 'green';
+            }
+            else {
+                er1.innerHTML = 'Invalid user'
+                er1.style.color = 'red';
+            }
+        }
+
+        document.getElementById('user').addEventListener("keyup",validateForm);
+    </script>
+</body>
+</html>

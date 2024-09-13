@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KA</title>
+  <style>
+    /* The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element. */
+    div+p {
+      background-color: aquamarine;
+    }
+    div+a {
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Adjacent sibling combinator plus +</h2>
+  <div>div 1</div>
+  <p>para 1</p>
+  <p>para 2</p>
+  <div>div 2</div>
+  <p>para 3</p>
+  <p>para 4</p>
+  <div>
+    <div>
+      <p>para 5</p>
+      <a href="#">google</a>
+    </div>
+  </div>
+
+  <div>a</div>
+  <a href="">facebook</a>
+</body>
+
+</html>

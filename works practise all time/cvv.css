@@ -1,0 +1,239 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.sbsmain{
+    position: relative;
+    height: 2000px;
+    width: 2000px;
+    background-color: white;
+}
+
+.main {
+    height: 100%;
+    width: 2000px;
+    background-color: white;
+    position: absolute;
+    left: 70%;
+}
+
+.main1 {
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    /* naam wla me add krna h lst me ps absolute hi lgega krna h */
+}
+.child1main{
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    height:1%;
+    width: 6%;
+    top: 18%;
+    left: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.child2main{
+    position: absolute;
+    background-color: lightcyan;
+    height: 1%;
+    width: 6%;
+    top: 20%;
+    left: 53%;
+    border: 2px solid black;
+    border-radius: 10px;   
+}
+.child3main{
+    position: absolute;
+    background-color: lightgreen;
+    height: 1%;
+    width: 2%;
+    top: 19%;
+    left: 59%;
+    border: 2px solid black;
+    border-radius: 10px;   
+    border-radius: 100%;
+}
+.img1 {
+    height: 50%;
+    width: 20%;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    filter: drop-shadow( 3px 3px 20px red);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+
+}
+
+.h11 {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.h12 {
+    position: absolute;
+    top: 60%;
+    font-size: 55px;
+    left: 33%;
+    color: black;
+}
+
+.main2 {
+    height: 25%;
+    width: 30%;
+    position: absolute;
+    top: 33%;
+    left: 5px;
+}
+
+.h13 {
+    position: absolute;
+    font-size: 60px;
+    left: 30%;
+    top: 0%;
+}
+
+.para1 {
+    position: absolute;
+    font-size: 40px;
+    top: 20%;
+}
+
+.main3 {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 31%;
+    left: 5px;
+}
+
+.main4 {
+    height: 91%;
+    width: 2px;
+    background-color: black;
+    position: absolute;
+    left: 35%;
+    top: 32%;
+}
+
+.main5 {
+    height: 25%;
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 5px;
+}
+
+.h14 {
+    position: absolute;
+    font-size: 60px;
+    left: 30%;
+}
+
+.para2 {
+    position: absolute;
+    top: 20%;
+    font-size: 40px;
+    left: 5%;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.main6 {
+    height: 25%;
+    width: 50%;
+    position: absolute;
+    top: 33%;
+    left: 40%;
+}
+
+.h15 {
+    position: absolute;
+    font-size: 60px;
+    left: 35%;
+
+}
+
+.para3 {
+    position: absolute;
+    top: 15%;
+    font-size: 40px;
+    left: 5%;
+}
+.main7{
+    height: 30%;
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+}
+.h16{
+    position: absolute;
+    font-size: 60px;
+    left: 35%;
+}
+.para4{
+    position: absolute;
+    top: 15%;
+    font-size: 40px;
+    left: 5%;
+}
+.main8{
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 93%;
+}
+.h17{
+    position: absolute;
+    font-size: 60px;
+    left: 35%;
+}
+.para5{
+    position: absolute;
+    top: 15%;
+    font-size: 40px;
+    left: 5%;
+}
+.main9{
+    height: 30%;
+    width: 100%;
+    background-color: rgb(16, 11, 11);
+    position: absolute;
+    left: 5px;
+    top: 140%;
+}
+
+
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+.para6{
+    color: white;
+    position: absolute;
+    top: 3%;
+    left: 60%;
+    font-size: 50px;
+}

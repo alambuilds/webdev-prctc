@@ -1,0 +1,14 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.one {
+    background-color: black;
+}
+.two {
+    background-color: red;
+}

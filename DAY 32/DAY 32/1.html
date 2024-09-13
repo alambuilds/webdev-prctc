@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // call back function 
+        
+        function abc (s) {
+            console.log(s);
+        }
+
+        function def ( a, b , callback ) {
+            let x = a + b ;
+            callback(x) ;
+        }
+
+        def( 4,5 , abc );
+
+    </script>
+</body>
+</html>

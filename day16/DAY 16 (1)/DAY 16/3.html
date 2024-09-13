@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inp {
+            width: 30%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .a {
+            width: 30%;
+            margin: 30px auto;
+        }
+        table , tr , th , td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .b {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="inp">
+        <input type="text" id="nm" placeholder="enter name">
+        <input type="text" id="roll" placeholder="enter roll">
+        <input type="text" id="p" placeholder="enter phy">
+        <input type="text" id="c" placeholder="enter che">
+        <input type="text" id="m" placeholder="enter math">
+        <button onclick="calculate()">Print result</button>
+    </div>
+
+    <div class="a">
+        <table class="b" id="result_table">
+            <tr>
+                <th colspan="3">ABC SCHOOL</th>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td colspan="2" id="stname"></td>
+            </tr>
+            <tr>
+                <td>roll</td>
+                <td colspan="2" id="stroll"></td>
+            </tr>
+            <tr>
+                <td>phy</td>
+                <td colspan="2" id="pm"></td>
+            </tr>
+            <tr>
+                <td>che</td>
+                <td colspan="2" id="cm"></td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td colspan="2" id="mm"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>per</td>
+                <td>Grade</td>
+            </tr>
+            <tr>
+                <td id="total"></td>
+                <td id="per"></td>
+                <td id="grade"></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <script>
+
+        document.getElementById("").addEventListener( "keyup" , function () {
+            let mark = parseInt( this.value );
+            if ( mark > 100 ) {
+                alert('invalid');
+                document.getElementById("p").value = '' ;
+            }
+        })
+
+
+        function calculate() {
+
+            document.getElementById("result_table").style.display = 'block' ;
+
+            let n = document.getElementById("nm").value;
+            let r = document.getElementById("roll").value;
+            let p = document.getElementById("p").value;
+            let c = document.getElementById("c").value;
+            let m = document.getElementById("m").value;
+
+            let total_marks = parseInt(p) + parseInt(c) + parseInt(m);
+
+            let per = total_marks / 3;
+
+            let gr = '';
+
+            if (per > 90 && per <= 100) {
+                gr = 'A+';
+            }
+            if (per > 80 && per <= 90) {
+                gr = 'A';
+            }
+            if (per > 70 && per <= 80) {
+                gr = 'B+';
+            }
+            if (per > 60 && per <= 70) {
+                gr = 'B';
+            }
+            if (per > 45 && per <= 60) {
+                gr = 'C';
+            }
+            if (per <= 45) {
+                gr = 'FAIL';
+            }
+
+            document.getElementById("stname").innerHTML = n ;
+            document.getElementById("stroll").innerHTML = r ;
+            document.getElementById("pm").innerHTML = p ;
+            document.getElementById("cm").innerHTML = c ;
+            document.getElementById("mm").innerHTML = m ;
+            document.getElementById("total").innerHTML = total_marks ;
+            document.getElementById("per").innerHTML = per ;
+            document.getElementById("grade").innerHTML = gr ;
+
+            if ( per <= 45 ) {
+                document.getElementById("grade").style.color = 'red';
+            }
+            if ( per > 45 ) {
+                document.getElementById("grade").style.color = 'green';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

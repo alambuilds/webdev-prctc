@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Folder</title>
+    <style>
+            .outer{
+                height: 100px;
+                width: 200px;
+                background-color: yellow;
+                margin: 100px;
+                position: relative;
+                border-radius: 20px;
+                
+                
+
+            }
+            .inner{
+                height: 30px;
+                width: 40px;
+                background-color: yellow;
+                position: absolute;
+                top: -14px;
+                z-index: 1;
+                border-radius: 10px;
+                
+            }
+            .handle{
+                height: 30px;
+                width: 40px;
+                background-color: lightseagreen;
+                position: absolute;
+                top: 69px;
+                left:69px;
+
+                z-index: 1;               
+            }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="handle"></div>
+    </div>
+</body>
+</html>

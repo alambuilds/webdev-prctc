@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA D28</title>
+</head>
+<body>
+    <h1>Window event</h1>
+    <h2>kalam</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at quia cupiditate unde tempore. Nam quaerat quam ipsa repellendus tempore.</p>
+
+    <button onclick="print();">print</button>
+
+    <button onclick="window.alert('hello')">alert</button>
+    <button onclick="confirm('are you sure')">confirm</button>
+    <button onclick="prompt('enter no a')">prompt</button>
+
+    <button onclick="dele()">DELETE</button>
+
+    <button onclick="getno()">get</button>
+    <script>
+     function dele() {
+         if(confirm('do you want to delete')) {
+             console.log('deleted');
+         }
+         else {
+             console.log('not delted');
+         }
+     }
+
+     function getno () {
+        let x = window.prompt("enter no");
+        console.log(x);
+     }
+    </script>
+</body>
+</html>

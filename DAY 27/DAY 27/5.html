@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    
+    <script>
+
+        let a = [ 
+            [1,1,1] , 
+            [2,2,2] , 
+            [3,3,3] 
+        ];
+
+        let b = [ 
+            [1,1,1] , 
+            [2,2,2] , 
+            [3,3,3] 
+        ];
+
+        let c = [ [] , [] , []];
+
+        let aDiv = document.getElementById("a") ;
+
+        aDiv.innerHTML = '';
+
+        for ( i = 0 ; i < 3 ; i++ ) {
+            for ( j = 0 ; j < 3 ; j++ ) {
+                aDiv.innerHTML += a[i][j] + " " ;
+            }
+            aDiv.innerHTML += "<br>";
+        }
+
+
+        let bDiv = document.getElementById("b") ;
+
+        bDiv.innerHTML = '';
+
+        for ( i = 0 ; i < 3 ; i++ ) {
+            for ( j = 0 ; j < 3 ; j++ ) {
+                bDiv.innerHTML += b[i][j] + " " ;
+            }
+            bDiv.innerHTML += "<br>";
+        }
+
+
+        let cDiv = document.getElementById("c") ;
+
+        cDiv.innerHTML = '';
+    
+
+        for ( i = 0 ; i < 3 ; i++ ) {
+            for ( j = 0 ; j < 3 ; j++ ) {
+                c[i][j] = a[i][j] + b[i][j] ;
+                cDiv.innerHTML += c[i][j] + " " ;
+            }
+            cDiv.innerHTML += "<br>";
+        }
+
+
+    </script>
+</body>
+</html>

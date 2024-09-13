@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            color: red;
+        }
+
+        .b {
+            color: green;
+        }
+
+        .c {
+            font-size: 2vw;
+        }
+
+        @media screen and (max-width : 640px){
+            .c {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p class="a c"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia.</p>
+        <p class="b c">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia.</p>
+
+        <div>
+            <p class="a c">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia.</p>
+        </div>
+    </div>
+
+</body>
+</html>

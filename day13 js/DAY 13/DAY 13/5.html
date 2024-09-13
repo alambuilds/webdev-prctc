@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="abc"></div>
+
+
+
+
+    <script>
+        
+        var x = "Hello amit" ;
+
+        // document.getElementById("abc").innerHTML = "<h1 class='abc'>" + x + "</h1>" ;
+
+        // document.getElementById("abc").innerText = "<h1>" + x + "</h1>" ;
+
+        // document.getElementById("abc").innerHTML = '<h1 style="color:red">' + x + '</h1>' ;
+
+
+        document.getElementById("abc").innerHTML = `
+            <h1 class="abc"> ${x} , bye </h1>
+        `;
+
+    </script>
+</body>
+</html>

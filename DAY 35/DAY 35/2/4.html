@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA D28</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2> Key Event </h2>
+    <input type="text" id="as1"><br>
+    <input type="text" id="as2"><br>
+    <input type="text" id="as3"><br>
+
+    <script>
+    function funas2() {
+        console.log('keyup');
+    }
+    function funas1() {
+        console.log('keydown');
+    }
+    function funas3() {
+        console.log('keypress');
+    }
+    document.getElementById("as1").addEventListener("keydown",funas1);
+    document.getElementById("as2").addEventListener("keyup",funas2);
+    document.getElementById("as3").addEventListener("keypress",funas3);
+    </script>
+</body>
+</html>

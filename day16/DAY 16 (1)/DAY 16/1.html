@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let n = 'amir' ;
+        let r = 12 ;
+        let p = 90 ;
+        let c = 9 ;
+        let m = 9 ;
+
+        let total_marks = p + c + m ;
+        let per = total_marks / 3 ;
+
+        let gr = ''; 
+
+        if ( per > 90 && per <= 100 ) {
+            gr = 'A+'; 
+        }
+        if ( per > 80 && per <= 90 ) {
+            gr = 'A'; 
+        }
+        if ( per > 70 && per <= 80 ) {
+            gr = 'B+'; 
+        }
+        if ( per > 60 && per <= 70 ) {
+            gr = 'B'; 
+        }
+        if ( per > 45 && per <= 60 ) {
+            gr = 'C'; 
+        }
+        if ( per <= 45  ) {
+            gr = 'FAIL'; 
+        }
+
+        console.log(gr);
+    </script>
+</body>
+</html>

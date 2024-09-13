@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let u = 302 ;
+
+        let total = 0 ;
+        let tax = 50 ;
+
+        if ( u > 0 && u <= 100 ) {
+            total = u * 1;
+        }
+
+        if ( u > 100 && u <= 200 ) {
+            total = 100 + (u-100) * 2 ;
+        }
+
+        if ( u > 200 && u <= 300 ) {
+            total = 300 + (u-200) * 3 ;
+        }
+
+        if ( u > 300 ) {
+            total = 600 + (u-300) * 5 ;
+        }
+
+        let gt = total + tax ;
+
+        console.log(gt);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            height: 100px;
+            width: 200px;
+            background-color: yellow;
+            margin: 70px 300px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            position: relative;
+        }
+        .inner {
+            height: 20px;
+            width: 40px;
+            background-color: yellow;
+            position: absolute;
+            top: -15px;
+            z-index: -1;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+</body></html>

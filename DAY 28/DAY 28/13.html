@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav1 {
+            background-color: red;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .nav2 {
+            background-color: blue;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            display: none;
+        }
+
+        @media screen and (max-width : 640px){
+            .nav2 {
+                display: block;
+            }
+
+            .nav1 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="nav1">
+        <a href="">home</a>
+        <a href="">about</a>
+    </div>
+
+    <div class="nav2">
+        <a href="">H</a>
+        <a href="">A</a>
+    </div>
+
+</body>
+</html>

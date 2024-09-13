@@ -1,0 +1,12 @@
+.frmcls {
+    width: 50%;
+    margin-top: 200px;
+}
+
+.alink {
+    float: left;
+}
+
+.error {
+    color: red;
+}

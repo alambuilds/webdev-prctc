@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // armstrong no 
+
+        let n = 153 ;
+        let s = 0 ;
+        let t = n ;
+
+        while ( n > 0 ) {
+            let r = n % 10 ;
+            s = s + r * r * r ;
+            n = parseInt ( n / 10 ) ;
+        }
+
+        if ( s == t ) {
+            console.log(`${t} armstrong no`);
+        } else {
+            console.log(t + " not armstrong no");
+        }
+
+    </script>
+</body>
+</html>

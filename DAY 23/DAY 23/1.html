@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" placeholder="Enter no a" id="a"><br>
+    <input type="number" placeholder="Enter no b" id="b"><br>
+    <button id="sum">click me</button><br>
+    <div id="result"></div>
+
+
+    <script>
+
+        document.getElementById("sum").addEventListener( "click" , function () {
+            const a = document.getElementById("a").value ;
+            const b = document.getElementById("b").value ;
+            const c = parseInt(a) + parseInt(b) ;
+            document.getElementById("result").innerHTML = c ;
+        });
+    </script>
+</body>
+</html>

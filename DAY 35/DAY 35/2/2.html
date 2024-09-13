@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA D28</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Mouse Event</h2>
+    <div class="one" onmousedown="as1()">1</div>
+    <div class="two" onmouseup="as2()">2</div>
+
+    <div class="one" id="as3">3</div>
+    <div class="two" id="as4">4</div>
+    <div class="one" id="as5">5</div>
+    <div class="two" id="as6">6</div>
+    <div class="one" id="as7">7</div>
+    <div class="two" id="as8">8</div>
+    <div class="one" id="as9">9</div>
+    <div class="two" id="as10">10</div>
+
+    <script>
+        function as1() {
+            console.log('on mousedown')
+        }
+        function as2() {
+            console.log('on mouseup')
+        }
+        function funas(e) {
+            console.log(e.type);
+        }
+
+        document.getElementById("as3").addEventListener("click",funas,false);
+        document.getElementById("as4").addEventListener("dblclick",funas,false);
+        document.getElementById("as5").addEventListener("mouseenter",funas,false);
+        document.getElementById("as6").addEventListener("mouseleave",funas,false);
+        document.getElementById("as7").addEventListener("mouseover",funas,false);
+        document.getElementById("as8").addEventListener("mouseout",funas,false);
+        document.getElementById("as9").addEventListener("mousemove",funas,false);
+        document.getElementById("as10").addEventListener("contextmenu",funas,false);
+    </script>
+</body>
+</html>

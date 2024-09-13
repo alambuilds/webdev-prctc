@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // pallindrome   121
+
+        let n = 12321 ;
+        let t = n ;
+        let s = 0 ;
+
+        while ( n > 0 ) {
+            let r = n % 10 ;
+            s = s * 10 + r ;
+            n = parseInt ( n / 10 ) ;
+        }
+
+        if ( s == t ) {
+            console.log(`${t} pallindrome no`);
+        } else {
+            console.log(t + " not pallindrome no");
+        }
+
+    </script>
+</body>
+</html>
